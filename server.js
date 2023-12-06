@@ -5,7 +5,7 @@ require("dotenv").config();
 // parse requests of content-type -application / json;
 app.use(express.json());
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to my application." });
+  res.send("Welcome to my application.");
 });
 
 // set port, listen for requests
