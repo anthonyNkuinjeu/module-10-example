@@ -5,7 +5,7 @@ require("dotenv").config();
 // parse requests of content-type -application / json;
 app.use(express.json());
 app.get("/", (req, res) => {
-  res.send("Welcome to my application CICD");
+  res.send("Welcome to my application CICD - We are using docker image too");
 });
 
 // set port, listen for requests
